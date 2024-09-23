@@ -146,6 +146,13 @@ nav{
 
     .parte2{
         flex-direction: column;
+
+        .produtos1 .produtos2{
+            flex-direction: flex;
+        }
+        .produtos3 .produtos4{
+            flex-direction: flex;
+        }
     }
 
 }

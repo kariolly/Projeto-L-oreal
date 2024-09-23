@@ -53,7 +53,7 @@ ul li a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 10%;
+  padding-left: 1%;
   padding-top: 8%;
 }
 .parte1 .texto1 {
@@ -74,23 +74,17 @@ ul li a {
 .parte2 {
   display: flex;
   align-items: center;
-  padding: 2%;
   width: 100%;
   justify-content: space-between;
-  text-align: center;
 }
-.parte2 h2 {
+
+h2 {
   font-family: "Kodchasan", sans-serif;
   font-weight: 400;
   font-size: 1.87rem;
   line-height: 39px;
   padding-left: 10%;
   text-align: center;
-  margin-right: 2%;
-}
-.parte2 .produtos1 {
-  margin-left: 2px;
-  margin-right: 2px;
 }
 
 @media (max-width: 1600px) {
@@ -119,5 +113,11 @@ ul li a {
   }
   .parte2 {
     flex-direction: column;
+  }
+  .parte2 .produtos1 .produtos2 {
+    flex-direction: flex;
+  }
+  .parte2 .produtos3 .produtos4 {
+    flex-direction: flex;
   }
 }/*# sourceMappingURL=style.css.map */
