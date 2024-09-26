@@ -6,25 +6,22 @@
 
 body {
   background-color: #EFEEF3;
-  width: 100%;
 }
 
 header {
-  position: relative;
   z-index: 10;
 }
 header .background {
   width: 100vw;
+  display: flex;
 }
 
 nav {
   background-color: #EFEEF3;
-  width: 100%;
-  position: absolute;
-  top: 0;
   display: flex;
   justify-content: space-between;
-  padding: 1%;
+  padding-bottom: 5px;
+  padding: 10px;
   align-items: center;
 }
 
@@ -47,18 +44,21 @@ ul li {
 }
 ul li a {
   color: black;
+  text-decoration: none;
 }
 
 .parte1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 1%;
   padding-top: 8%;
+  padding: 5%;
+}
+.parte1 img {
+  padding-bottom: 5%;
 }
 .parte1 .texto1 {
   align-items: center;
-  padding: 10%;
   font-size: 1.5rem;
   text-align: center;
   font-family: "Kodchasan", sans-serif;
@@ -74,8 +74,9 @@ ul li a {
 .parte2 {
   display: flex;
   align-items: center;
-  width: 100%;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 h2 {
@@ -83,17 +84,44 @@ h2 {
   font-weight: 400;
   font-size: 1.87rem;
   line-height: 39px;
-  padding-left: 10%;
+  text-align: center;
+  padding-left: 60px;
+  align-items: center;
+}
+
+.produtos1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 20%;
+}
+
+.produtos2 {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+  padding-right: 70px;
+  padding-left: 20px;
+  align-items: center;
+}
+
+footer {
+  padding-top: 100px;
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
   text-align: center;
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1200px) {
+  header .background {
+    display: none;
+  }
   nav {
     flex-direction: column;
     align-items: center;
   }
   ul {
     flex-direction: column;
+    margin-top: 5px;
     align-items: center;
     text-align: center;
   }
@@ -104,20 +132,17 @@ h2 {
     padding-bottom: 5%;
   }
 }
-@media (max-width: 1100px) {
+@media (max-width: 900px) {
   .parte1 {
     flex-direction: column;
+    align-items: center;
   }
   .texto1 {
     flex-direction: column;
+    align-items: center;
   }
   .parte2 {
     flex-direction: column;
-  }
-  .parte2 .produtos1 .produtos2 {
-    flex-direction: flex;
-  }
-  .parte2 .produtos3 .produtos4 {
-    flex-direction: flex;
+    align-items: center;
   }
 }/*# sourceMappingURL=style.css.map */
