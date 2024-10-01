@@ -50,12 +50,9 @@ ul li a {
 .parte1 {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding-top: 8%;
   padding: 5%;
-}
-.parte1 img {
-  padding-bottom: 5%;
 }
 .parte1 .texto1 {
   align-items: center;
@@ -74,8 +71,8 @@ ul li a {
 .parte2 {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   flex-wrap: wrap;
+  padding: 5%;
   gap: 20px;
 }
 
@@ -85,24 +82,19 @@ h2 {
   font-size: 1.87rem;
   line-height: 39px;
   text-align: center;
-  padding-left: 60px;
   align-items: center;
 }
 
 .produtos1 {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 20%;
+  justify-content: space-around;
+  width: 30%;
 }
 
 .produtos2 {
   display: flex;
-  justify-content: space-between;
-  width: 20%;
-  padding-right: 70px;
-  padding-left: 20px;
-  align-items: center;
+  justify-content: space-around;
+  width: 30%;
 }
 
 footer {
@@ -111,7 +103,7 @@ footer {
   text-align: center;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1163px) {
   header .background {
     display: none;
   }
